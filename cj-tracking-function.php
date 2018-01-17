@@ -7,8 +7,8 @@
 add_action( 'woocommerce_thankyou', 'add_cj_tracking' );
 
 function add_cj_tracking( $order_id ){
-	$order = wc_get_order( $order_id );
-	$line_items = $order->get_items();
+    $order = wc_get_order( $order_id );
+    $line_items = $order->get_items();
     $itemcnt = 0;
 
     // Tracking scripts parts
